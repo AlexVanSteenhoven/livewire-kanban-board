@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace ModusDigital\LivewireKanbanBoard\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LivewireKanbanBoardCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'livewire-kanban-board';
 
     public $description = 'My command';
 

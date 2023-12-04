@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "alexvansteenhoven/livewire-kanban-board",
+    "description": "This is my package livewire-kanban-board",
     "keywords": [
-        ":vendor_name",
+        "ModusDigital",
         "laravel",
-        ":package_slug"
+        "livewire-kanban-board"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/alexvansteenhoven/livewire-kanban-board",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Alex van Steenhoven",
+            "email": "alex@modus-digital.com",
             "role": "Developer"
         }
     ],
@@ -30,24 +30,23 @@
         "pestphp/pest-plugin-laravel": "^2.0",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "spatie/laravel-ray": "^1.26"
+        "phpstan/phpstan-phpunit": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "ModusDigital\\LivewireKanbanBoard\\": "src/",
+            "ModusDigital\\LivewireKanbanBoard\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "ModusDigital\\LivewireKanbanBoard\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-livewire-kanban-board --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -73,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "ModusDigital\\LivewireKanbanBoard\\LivewireKanbanBoardServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LivewireKanbanBoard": "ModusDigital\\LivewireKanbanBoard\\Facades\\LivewireKanbanBoard"
             }
         }
     },
