@@ -1,0 +1,9 @@
+{
+    "name": "livewire-kanban-board",
+    "type": "module",
+    "author": "Alex van Steenhoven <alex.@modus-digital.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "tailwindcss": "^3.3.5"
+    }
+}

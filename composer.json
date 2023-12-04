@@ -1,6 +1,6 @@
 {
-    "name": "alexvansteenhoven/livewire-kanban-board",
-    "description": "This is my package livewire-kanban-board",
+    "name": "alexvansteenhoven/kanban-board",
+    "description": "This is my package kanban-board",
     "keywords": [
         "ModusDigital",
         "laravel",
@@ -17,8 +17,9 @@
     ],
     "require": {
         "php": "^8.1",
-        "spatie/laravel-package-tools": "^1.14.0",
-        "illuminate/contracts": "^10.0"
+        "illuminate/contracts": "^10.0",
+        "livewire/livewire": "^3.2",
+        "spatie/laravel-package-tools": "^1.14.0"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -34,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ModusDigital\\LivewireKanbanBoard\\": "src/",
-            "ModusDigital\\LivewireKanbanBoard\\Database\\Factories\\": "database/factories/"
+            "ModusDigital\\KanbanBoard\\": "src/",
+            "ModusDigital\\KanbanBoard\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ModusDigital\\LivewireKanbanBoard\\Tests\\": "tests/",
+            "ModusDigital\\KanbanBoard\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -72,10 +73,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ModusDigital\\LivewireKanbanBoard\\LivewireKanbanBoardServiceProvider"
+                "ModusDigital\\KanbanBoard\\KanbanBoardServiceProvider"
             ],
             "aliases": {
-                "LivewireKanbanBoard": "ModusDigital\\LivewireKanbanBoard\\Facades\\LivewireKanbanBoard"
+                "KanbanBoard": "ModusDigital\\KanbanBoard\\Facades\\KanbanBoard"
             }
         }
     },
